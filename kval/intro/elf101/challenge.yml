@@ -1,0 +1,33 @@
+title: Elf 101
+description: |
+  ELF är standardformatet för exekverbara filer på Linux-system. På Windows är det istället .exe-filer, även kallade PE-filer. MacOS använder så kallade Macho-filer för detta, som sedan hamnar inuti en större .app-fil.
+
+  I många CTF-uppgifter fokuserar man på analysera och ha sönder ELF-filer. Särskilt i kategorierna Pwn och Reversing.
+
+  Om du inte kör Linux kan du inte köra ELF-filer. Det finns två enkla sätt att kunna köra ELF-filer ändå. Antingen installera WSL, Windows Subsystem for Linux (fungerar endast på Windows) eller att installera en Linux-VM i t.ex. VirtualBox (fungerar för både Windows och Mac). Här är två länkar till tutorials för båda sätten. WSL är enklare att installera.
+
+  <a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">https://docs.microsoft.com/en-us/windows/wsl/install-win10</a>
+  <a href="https://www.wikihow.com/Install-Ubuntu-on-VirtualBox">https://www.wikihow.com/Install-Ubuntu-on-VirtualBox</a>
+
+  När du har gjort det, eller om du redan hade ett linuxsystem från början, kör filen <code>elf</code> som du kan ladda ner till höger för att få flaggan.
+
+authors:
+  - Säkerhets-SM
+categories:
+  - introduktion
+  - lätt
+
+flag_format_prefix: SSM{
+flags: elf_on_the_shelf
+
+downloadable_files:
+  - elf
+
+score: 10
+
+spec: 0.0.1
+
+challenge_id: 983b1fb2-5950-4a63-88c7-2c0b79ab33e7
+
+custom:
+  order: 5

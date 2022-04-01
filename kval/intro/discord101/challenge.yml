@@ -1,0 +1,22 @@
+title: Discord 101
+description: |
+  Kodsport Sverige använder Discord som kommunikationsmedel för våra medlemmar, och Säkerhets-SM har en kategori där!
+
+  Gå med i Discord-servern som du kan göra på följande länk och se om du kan hitta flaggan: <a href="http://discord.gg/W77q5ps">http://discord.gg/W77q5ps</a>
+
+  På Discord-servern kan du även kontakta arrangörerna till alla utmaningarna för att ställa frågor.
+authors:
+  - Säkerhets-SM
+categories:
+  - introduktion
+  - lätt
+
+flag_format_prefix: SSM{
+flags: k1ka_g4rna_på_pr0golymp_0ckså!
+
+challenge_id: 5ccf2586-fcf3-4de5-a1ee-0f0582ef98f6
+spec: 0.0.1
+
+score: 5
+custom:
+  order: 2
