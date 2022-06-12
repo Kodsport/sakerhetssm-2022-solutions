@@ -1,0 +1,36 @@
+title: remote 202
+description: |
+  För finalen är alla remote-uppgifter (pwn, etc.) över TLS för att se till att allt som skickas mellan dig och servern är krypterat.
+
+  Kommandot <code>nc</code> (netcat) klarar inte TLS, men det väldigt lika kommandot <code>ncat</code> har en option <code>--ssl</code> som gör att man kommunicerar över TLS istället för TCP.
+
+  Funkar inte <code>ncat</code> kan kommandot <code>openssl</code> också funka. <code>openssl s_client -connect {ip}:{port}</code>.
+
+authors:
+  - Jonathan Lööv
+categories:
+  - intro
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: d0nt_forg3t_ab0ut_pwnt00ls.remote_w1th-ssl=True!
+
+custom_service_types:
+  - type: tls
+    display: ncat --ssl {host} {port}
+
+service:
+  type: tls
+  image: container
+  internal_port: 50433
+  privileged: true
+
+# downloadable_files:
+#   - container/service
+
+challenge_id: 96b1495a-6b8e-402e-8c9f-04e519c4b305
+spec: 0.0.1
+
+score: 87
+custom:
+  order: 1

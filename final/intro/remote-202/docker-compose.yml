@@ -1,0 +1,7 @@
+services:
+  challenge:
+    build: container
+    ports:
+    - 50000:50433
+    privileged: true
+version: '3'

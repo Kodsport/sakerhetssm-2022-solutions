@@ -1,0 +1,19 @@
+#!/bin/bash
+
+while [[ true ]] ; do
+    echo -n "1 for flag, 2 to exit: "
+    read option
+
+    case $option in
+    1)
+        echo 'SSM{d0nt_forg3t_ab0ut_pwnt00ls.remote_w1th-ssl=True!}'
+        ;;
+    2)
+        exit
+        ;;
+    *)
+        echo "Invalid option"
+        ;;
+    esac
+
+done

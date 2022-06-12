@@ -1,0 +1,29 @@
+title: FREE wifi
+description: |
+  Vad menar du att mitt gratis wifi är lösenordskyddat?
+
+  OBS: Denna uppgift kräver att du spelar på plats och kan kräva speciell hårdvara. Prata med Mateusz i adminrummet för att hämta ut den.
+authors:
+  - Mateusz Drwal
+categories:
+  - on-site
+  - misc
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags: fr33_w1f1_bu7_n0_fr33_1n73rn37_:(
+
+custom_service_types:
+  - type: wifi
+    display: "Wi-Fi SSID: {ssid}"
+
+predefined_services:
+  - type: wifi
+    ssid: FREE_totally_secure_wifi
+
+challenge_id: e20a6545-8ee4-445a-a100-7a2ae74e73e5
+spec: 0.0.1
+
+score: 400
+custom:
+  order: 12

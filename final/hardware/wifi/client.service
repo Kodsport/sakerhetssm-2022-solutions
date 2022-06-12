@@ -1,0 +1,16 @@
+[Unit]
+Description=client
+After=network.target
+StartLimitBurst=1000
+StartLimitIntervalSec=1
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/pi
+ExecStart=/home/pi/client.py
+Restart=always
+RuntimeMaxSec=60
+
+[Install]
+WantedBy=multi-user.target

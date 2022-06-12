@@ -1,0 +1,45 @@
+title: Etch A Flag
+description: |
+  Etch A Sketch, nu i digatal eran! Rita flaggan och visa den sen för en admin!
+
+  OBS: Denna uppgift kräver att du spelar på plats. Varje lag får sitt eget kretskort, prata med Mateusz eller Jonathan i adminrummet för att hämta ut det.
+
+  Hint: Mateusz beställde de billigaste chippen som pengar kunde köpa. Det innebär att chippen ibland kan bete sig lite inkonsekvent. Om ni matar in något ni tror ska fungera men inte gör det, testa att köra komandona medans chippet är i shutdown mode, då verkar chippen bete sig mer konsekvent. Kom in i adminrummet och prata med Mateusz eller Jonathan ifall chippet ändå inte verkar fungera.
+
+authors:
+  - Mateusz Drwal
+  - Jonathan Lööv
+categories:
+  - on-site
+  - hardware
+
+# set the flag_format_prefix to `null` to not use the flag format
+flag_format_prefix: SSM{
+flags:
+  - flag: 🏳️
+  - flag: 🏴
+  - flag: 🏴‍☠️
+  - flag: 🏁
+  - flag: 🚩
+  - flag: 🏳️‍🌈
+  - flag: 🏳️‍⚧️
+
+# downloadable_files:
+#   - image.png
+
+# service:
+#   type: website
+#   image: container
+#   internal_port: 80
+
+# service:
+#   type: tcp
+#   image: container
+#   internal_port: 1337
+
+challenge_id: 621f826f-362b-4d83-a72d-cf55a4e82c42
+spec: 0.0.1
+
+score: 400
+custom:
+  order: 13
