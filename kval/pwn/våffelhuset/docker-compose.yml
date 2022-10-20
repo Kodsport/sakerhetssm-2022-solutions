@@ -1,0 +1,6 @@
+services:
+  challenge:
+    build: docker
+    ports:
+    - 50000:31337
+version: '3'
